@@ -10,7 +10,10 @@
             class="badge">
             {{ server.status }}
           </span>
-          <strong>{{ server.name }}</strong> | {{ server.instanceType | uppercase }} | {{ server.started | date }}
+          <!--https://angular.io/api?query=pipe-->
+          <strong>{{ server.name }}</strong> |
+          {{ server.instanceType | uppercase }} |
+          {{ server.started | date:'fullDate' | uppercase}}
         </li>
       </ul>
     </div>
