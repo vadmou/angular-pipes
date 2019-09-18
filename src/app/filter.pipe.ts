@@ -2,7 +2,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 
 @Pipe({
   name: 'filter',
-  pure: false //display data immediately
+  pure: false // display data immediately
 })
 export class FilterPipe implements PipeTransform {
   transform(value: any, filterString: string, propName: string): any {
